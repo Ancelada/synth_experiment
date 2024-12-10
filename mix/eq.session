@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<session Version="1.0">
+	<miscsettings>
+		<samplerate value="48"/>
+		<comment value="Product Default"/>
+	</miscsettings>
+	<system type="master">
+		<miscsettings>
+			<samplerate value="44.1"/>
+			<MidiInput2Src value="0"/>
+			<PCICardOpticalOut value="1"/>
+			<Out1L1R value="1"/>
+			<Out2L2R value="1"/>
+			<Out3L3R value="1"/>
+			<Out4L4R value="1"/>
+			<IOCardOut1L1R value="1"/>
+			<PCICardOpticalIn value="1"/>
+			<DockIn1L1R value="0"/>
+			<DockIn2L2R value="0"/>
+			<DockIn3L3R value="0"/>
+			<IOCardIn1L1R value="0"/>
+			<SPDIFFormat value="0"/>
+			<PCICardPresentOnCreation value="3.4"/>
+			<DockPresentOnCreation value="3.4"/>
+			<IOCardPresentOnCreation value="no"/>
+			<SyncPresentOnCreation value="no"/>
+		</miscsettings>
+		<outputs>
+			<output index="9" normalledsource="monitormix" type="Physical Output"/>
+			<output index="1" normalledsource="mainmix" type="Physical Output"/>
+			<output index="6" normalledsource="mainmix" type="Physical Output"/>
+			<output index="7" normalledsource="mainmix" type="Physical Output"/>
+			<output index="8" normalledsource="mainmix" type="Physical Output"/>
+			<output index="10" normalledsource="mainmix" type="Physical Output"/>
+			<output index="11" normalledsource="mainmix" type="Physical Output"/>
+		</outputs>
+		<mainsection>
+			<auxbusses>
+				<auxbuss>
+					<sendamount value="0.00000"/>
+					<returnamount value="-132.00000"/>
+					<insertschain>
+						<send bypassed="no" bypasspresolo="no" sendASIOoutput="4" solo="no"/>
+					</insertschain>
+				</auxbuss>
+				<auxbuss>
+					<sendamount value="0.00000"/>
+					<returnamount value="0.00000"/>
+					<insertschain/>
+				</auxbuss>
+			</auxbusses>
+			<mixlevel value="-29.419125"/>
+			<monitorlevel value="0.00000"/>
+			<balance value="0.00000"/>
+			<mute value="no"/>
+			<insertschain>
+				<peakmeter bypassed="no" bypasspresolo="no" solo="no"/>
+				<send bypassed="no" bypasspresolo="no" sendASIOoutput="0" solo="no"/>
+				<send bypassed="no" bypasspresolo="no" sendphysicaloutput="11" solo="no"/>
+			</insertschain>
+		</mainsection>
+		<mixerstrips>
+			<strip prefader="no">
+				<auxsend value="-132.00000"/>
+				<auxsend value="-132.00000"/>
+				<level value="0.00000"/>
+				<pan value="-90.00000"/>
+				<pan value="90.00000"/>
+				<mute value="no"/>
+				<solo value="no"/>
+				<mutepresolo value="no"/>
+				<username value="WAVE"/>
+				<insertschain>
+					<peakmeter bypassed="no" bypasspresolo="no" solo="no"/>
+				</insertschain>
+				<input index="0" type="WAVE"/>
+			</strip>
+			<strip prefader="no">
+				<auxsend value="-132.00000"/>
+				<auxsend value="-132.00000"/>
+				<level value="0.00000"/>
+				<pan value="-90.00000"/>
+				<pan value="90.00000"/>
+				<mute value="no"/>
+				<solo value="no"/>
+				<mutepresolo value="no"/>
+				<username value="-"/>
+				<insertschain/>
+				<input index="0" type="ASIO"/>
+			</strip>
+			<strip prefader="no">
+				<insertschain>
+					<peakmeter bypassed="no" bypasspresolo="no" solo="no"/>
+					<coreeffect abbrevname="COMPRESS" bypassed="yes" bypasspresolo="no" name="Compressor" piaguid="{CF651A9C-47C5-468B-9AC2-1C8D223E9CFB}" solo="no" sourcepreset="Keys Comp 1" wetdrymix="1.00000">
+						<param name="Threshold" type="continuous" value="-29.729731"/>
+						<param name="Ratio" type="discrete" value="13"/>
+						<param name="Post Gain" type="continuous" value="12.00000"/>
+						<param name="Attack Time" type="continuous" value="27.121622"/>
+						<param name="Release Time" type="continuous" value="2574.774658"/>
+						<param name="Pre-Delay" type="continuous" value="2.54054"/>
+						<param name="Input Meter" type="continuous" value="-4.604507"/>
+						<param name="Gain Reduction Meter" type="continuous" value="0.00000"/>
+					</coreeffect>
+				</insertschain>
+				<auxsend value="-132.00000"/>
+				<auxsend value="-132.00000"/>
+				<level value="0.00000"/>
+				<pan value="-90.00000"/>
+				<pan value="90.00000"/>
+				<mute value="no"/>
+				<solo value="no"/>
+				<mutepresolo value="no"/>
+				<username value="beat_snare"/>
+				<input index="1" type="ASIO"/>
+			</strip>
+		</mixerstrips>
+	</system>
+	<syncsettings>
+		<SMPTEStripeFrameRate value="3"/>
+		<SMPTEOutLevel value="1"/>
+		<ExtFlywheelCount value="127"/>
+		<WCTerm value="0"/>
+	</syncsettings>
+</session>
