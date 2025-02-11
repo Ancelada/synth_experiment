@@ -49,7 +49,7 @@
 					<insertschain/>
 				</auxbuss>
 			</auxbusses>
-			<mixlevel value="-23.420061"/>
+			<mixlevel value="-26.145418"/>
 			<monitorlevel value="0.00000"/>
 			<balance value="0.00000"/>
 			<mute value="no"/>
@@ -65,7 +65,7 @@
 				<auxsend value="-132.00000"/>
 				<level value="0.00000"/>
 				<pan value="-90.00000"/>
-				<pan value="64.68750"/>
+				<pan value="90.00000"/>
 				<mute value="no"/>
 				<solo value="no"/>
 				<mutepresolo value="no"/>
@@ -80,7 +80,7 @@
 				<auxsend value="-132.00000"/>
 				<level value="0.00000"/>
 				<pan value="-90.00000"/>
-				<pan value="67.50000"/>
+				<pan value="90.00000"/>
 				<mute value="no"/>
 				<solo value="no"/>
 				<mutepresolo value="no"/>
