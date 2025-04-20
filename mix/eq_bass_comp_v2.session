@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<session Version="1.0">
+	<miscsettings>
+		<samplerate value="48"/>
+		<comment value="Product Default"/>
+	</miscsettings>
+	<system type="master">
+		<miscsettings>
+			<samplerate value="44.1"/>
+			<MidiInput2Src value="0"/>
+			<PCICardOpticalOut value="1"/>
+			<Out1L1R value="1"/>
+			<Out2L2R value="1"/>
+			<Out3L3R value="1"/>
+			<Out4L4R value="1"/>
+			<IOCardOut1L1R value="1"/>
+			<PCICardOpticalIn value="1"/>
+			<DockIn1L1R value="0"/>
+			<DockIn2L2R value="0"/>
+			<DockIn3L3R value="0"/>
+			<IOCardIn1L1R value="0"/>
+			<SPDIFFormat value="0"/>
+			<PCICardPresentOnCreation value="3.4"/>
+			<DockPresentOnCreation value="3.4"/>
+			<IOCardPresentOnCreation value="no"/>
+			<SyncPresentOnCreation value="no"/>
+		</miscsettings>
+		<outputs>
+			<output index="9" normalledsource="monitormix" type="Physical Output"/>
+			<output index="1" normalledsource="mainmix" type="Physical Output"/>
+			<output index="6" normalledsource="mainmix" type="Physical Output"/>
+			<output index="7" normalledsource="mainmix" type="Physical Output"/>
+			<output index="8" normalledsource="mainmix" type="Physical Output"/>
+			<output index="10" normalledsource="mainmix" type="Physical Output"/>
+			<output index="11" normalledsource="mainmix" type="Physical Output"/>
+		</outputs>
+		<mainsection>
+			<auxbusses>
+				<auxbuss>
+					<sendamount value="0.00000"/>
+					<returnamount value="-132.00000"/>
+					<insertschain/>
+				</auxbuss>
+				<auxbuss>
+					<sendamount value="0.00000"/>
+					<returnamount value="0.00000"/>
+					<insertschain/>
+				</auxbuss>
+			</auxbusses>
+			<mixlevel value="-7.052517"/>
+			<monitorlevel value="0.00000"/>
+			<balance value="0.00000"/>
+			<mute value="no"/>
+			<insertschain>
+				<peakmeter bypassed="no" bypasspresolo="no" solo="no"/>
+				<coreeffect abbrevname="1-BAND_S" bypassed="no" bypasspresolo="no" name="1-Band Shelf EQ" piaguid="{524C5D3F-7A28-4F58-8906-507E6C0F8C43}" solo="no" sourcepreset="Default" wetdrymix="1.00000">
+					<param name="Shelf Type" type="selector" value="1"/>
+					<param name="Gain" type="continuous" value="4.35000"/>
+					<param name="Corner Frequency" type="continuous" value="1440.00000"/>
+				</coreeffect>
+				<trim bypassed="no" bypasspresolo="no" solo="no">
+					<param name="Gain" type="continuous" value="1.339286"/>
+					<param name="Phase Invert" type="toggle" value="off"/>
+					<param name="Level" type="continuous" value="-97.210648"/>
+				</trim>
+				<coreeffect abbrevname="COMPRESS" bypassed="no" bypasspresolo="no" name="Compressor" piaguid="{CF651A9C-47C5-468B-9AC2-1C8D223E9CFB}" solo="no" sourcepreset="Default" wetdrymix="1.00000">
+					<param name="Threshold" type="continuous" value="-6.00000"/>
+					<param name="Ratio" type="discrete" value="14"/>
+					<param name="Post Gain" type="continuous" value="0.00000"/>
+					<param name="Attack Time" type="continuous" value="2.331697"/>
+					<param name="Release Time" type="continuous" value="50.00000"/>
+					<param name="Pre-Delay" type="continuous" value="3.00000"/>
+					<param name="Input Meter" type="continuous" value="-93.125931"/>
+					<param name="Gain Reduction Meter" type="continuous" value="0.00000"/>
+				</coreeffect>
+				<send bypassed="no" bypasspresolo="no" sendASIOoutput="0" solo="no"/>
+				<send bypassed="no" bypasspresolo="no" sendphysicaloutput="11" solo="no"/>
+			</insertschain>
+		</mainsection>
+		<mixerstrips>
+			<strip prefader="no">
+				<auxsend value="-132.00000"/>
+				<auxsend value="-132.00000"/>
+				<level value="0.00000"/>
+				<pan value="-90.00000"/>
+				<pan value="90.00000"/>
+				<mute value="no"/>
+				<solo value="no"/>
+				<mutepresolo value="no"/>
+				<username value="WAVE"/>
+				<insertschain>
+					<peakmeter bypassed="no" bypasspresolo="no" solo="no"/>
+				</insertschain>
+				<input index="0" type="WAVE"/>
+			</strip>
+			<strip prefader="no">
+				<auxsend value="-132.00000"/>
+				<auxsend value="-132.00000"/>
+				<level value="0.00000"/>
+				<pan value="-90.00000"/>
+				<pan value="90.00000"/>
+				<mute value="no"/>
+				<solo value="no"/>
+				<mutepresolo value="no"/>
+				<username value="-"/>
+				<insertschain>
+					<peakmeter bypassed="no" bypasspresolo="no" solo="no"/>
+				</insertschain>
+				<input index="0" type="ASIO"/>
+			</strip>
+			<strip prefader="no">
+				<insertschain>
+					<peakmeter bypassed="no" bypasspresolo="no" solo="no"/>
+					<coreeffect abbrevname="S_REVERB" bypassed="no" bypasspresolo="no" name="Stereo Reverb" piaguid="{93FDD454-C5F9-4339-8230-ED29E83D0363}" solo="no" sourcepreset="Nice Room" wetdrymix="1.00000">
+						<param name="Decay Time" type="continuous" value="7.277027"/>
+						<param name="Early Reflections Level" type="continuous" value="27.927927"/>
+						<param name="Early/Late Reverb Balance" type="continuous" value="27.927927"/>
+						<param name="Late Reverb Delay" type="continuous" value="7.288288"/>
+						<param name="Diffusion" type="continuous" value="81.810768"/>
+						<param name="High Freq Damping" type="continuous" value="-2.914414"/>
+						<param name="Low Freq Damping" type="continuous" value="-2.855856"/>
+					</coreeffect>
+				</insertschain>
+				<auxsend value="-132.00000"/>
+				<auxsend value="-132.00000"/>
+				<level value="0.00000"/>
+				<pan value="-90.00000"/>
+				<pan value="90.00000"/>
+				<mute value="no"/>
+				<solo value="no"/>
+				<mutepresolo value="no"/>
+				<username value="reverb_room"/>
+				<input index="1" type="ASIO"/>
+			</strip>
+			<strip prefader="no">
+				<insertschain>
+					<peakmeter bypassed="no" bypasspresolo="no" solo="no"/>
+					<coreeffect abbrevname="S_REVERB" bypassed="no" bypasspresolo="no" name="Stereo Reverb" piaguid="{93FDD454-C5F9-4339-8230-ED29E83D0363}" solo="no" sourcepreset="Hole" wetdrymix="1.00000">
+						<param name="Decay Time" type="continuous" value="8.00000"/>
+						<param name="Early Reflections Level" type="continuous" value="14.414414"/>
+						<param name="Early/Late Reverb Balance" type="continuous" value="81.531532"/>
+						<param name="Late Reverb Delay" type="continuous" value="279.256744"/>
+						<param name="Diffusion" type="continuous" value="13.513513"/>
+						<param name="High Freq Damping" type="continuous" value="0.00000"/>
+						<param name="Low Freq Damping" type="continuous" value="0.00000"/>
+					</coreeffect>
+				</insertschain>
+				<auxsend value="-132.00000"/>
+				<auxsend value="-132.00000"/>
+				<level value="0.00000"/>
+				<pan value="-90.00000"/>
+				<pan value="90.00000"/>
+				<mute value="no"/>
+				<solo value="no"/>
+				<mutepresolo value="no"/>
+				<username value="reverb"/>
+				<input index="2" type="ASIO"/>
+			</strip>
+			<strip prefader="no">
+				<insertschain>
+					<coreeffect abbrevname="DISTORT" bypassed="no" bypasspresolo="no" name="Distortion" piaguid="{DEC63308-3E72-407B-B3D3-1E5541C702C4}" solo="no" sourcepreset="Lo Fi" wetdrymix="1.00000">
+						<param name="Pre EQ LP Cutoff" type="continuous" value="9130.810547"/>
+						<param name="Edge" type="discrete" value="48"/>
+						<param name="Gain" type="continuous" value="-26.486486"/>
+						<param name="Post EQ Center Freq" type="continuous" value="4389.909668"/>
+						<param name="Post EQ Bandwidth" type="continuous" value="4497.657715"/>
+					</coreeffect>
+					<peakmeter bypassed="no" bypasspresolo="no" solo="no"/>
+				</insertschain>
+				<auxsend value="-132.00000"/>
+				<auxsend value="-132.00000"/>
+				<level value="0.00000"/>
+				<pan value="-90.00000"/>
+				<pan value="90.00000"/>
+				<mute value="no"/>
+				<solo value="no"/>
+				<mutepresolo value="no"/>
+				<username value="distort"/>
+				<input index="3" type="ASIO"/>
+			</strip>
+			<strip prefader="no">
+				<insertschain>
+					<coreeffect abbrevname="COMPRESS" bypassed="no" bypasspresolo="no" name="Compressor" piaguid="{CF651A9C-47C5-468B-9AC2-1C8D223E9CFB}" solo="no" sourcepreset="kidburn_punch" wetdrymix="1.00000">
+						<param name="Threshold" type="continuous" value="-34.285713"/>
+						<param name="Ratio" type="selector" value="13"/>
+						<param name="Post Gain" type="continuous" value="28.648649"/>
+						<param name="Attack Time" type="continuous" value="10.00000"/>
+						<param name="Release Time" type="continuous" value="528.378357"/>
+						<param name="Pre-Delay" type="continuous" value="3.00000"/>
+						<param name="Input Meter" type="continuous" value="-132.00000"/>
+						<param name="Gain Reduction Meter" type="continuous" value="0.00000"/>
+					</coreeffect>
+					<peakmeter bypassed="no" bypasspresolo="no" solo="no"/>
+				</insertschain>
+				<auxsend value="-132.00000"/>
+				<auxsend value="-132.00000"/>
+				<level value="-6.233107"/>
+				<pan value="-90.00000"/>
+				<pan value="90.00000"/>
+				<mute value="no"/>
+				<solo value="no"/>
+				<mutepresolo value="no"/>
+				<username value="compress"/>
+				<input index="4" type="ASIO"/>
+			</strip>
+		</mixerstrips>
+	</system>
+	<syncsettings>
+		<SMPTEStripeFrameRate value="3"/>
+		<SMPTEOutLevel value="1"/>
+		<ExtFlywheelCount value="127"/>
+		<WCTerm value="0"/>
+	</syncsettings>
+</session>

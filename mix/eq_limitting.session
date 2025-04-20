@@ -49,29 +49,55 @@
 					<insertschain/>
 				</auxbuss>
 			</auxbusses>
-			<mixlevel value="-38.149002"/>
+			<mixlevel value="-39.240238"/>
 			<monitorlevel value="0.00000"/>
 			<balance value="0.00000"/>
 			<mute value="no"/>
 			<insertschain>
 				<trim bypassed="no" bypasspresolo="no" solo="no">
-					<param name="Gain" type="continuous" value="6.00000"/>
+					<param name="Gain" type="continuous" value="4.553571"/>
 					<param name="Phase Invert" type="toggle" value="off"/>
-					<param name="Level" type="continuous" value="-89.331985"/>
+					<param name="Level" type="continuous" value="-93.032913"/>
 				</trim>
 				<peakmeter bypassed="no" bypasspresolo="no" solo="no"/>
 				<coreeffect abbrevname="COMPRESS" bypassed="no" bypasspresolo="no" name="Compressor" piaguid="{CF651A9C-47C5-468B-9AC2-1C8D223E9CFB}" solo="no" sourcepreset="Limiter" wetdrymix="1.00000">
-					<param name="Threshold" type="continuous" value="-3.107143"/>
+					<param name="Threshold" type="continuous" value="-6.00000"/>
 					<param name="Ratio" type="discrete" value="15"/>
 					<param name="Post Gain" type="continuous" value="-0.50000"/>
 					<param name="Attack Time" type="continuous" value="93.831245"/>
 					<param name="Release Time" type="continuous" value="682.142883"/>
 					<param name="Pre-Delay" type="continuous" value="0.00000"/>
-					<param name="Input Meter" type="continuous" value="-87.266602"/>
+					<param name="Input Meter" type="continuous" value="-92.62500"/>
 					<param name="Gain Reduction Meter" type="continuous" value="0.00000"/>
+				</coreeffect>
+				<coreeffect abbrevname="3-BAND_P" bypassed="no" bypasspresolo="no" name="3-Band EQ" piaguid="{38D0FEC7-8F76-452B-AF00-A115A1119840}" solo="no" sourcepreset="Default" wetdrymix="0.50000">
+					<param name="High Gain" type="continuous" value="5.357143"/>
+					<param name="High Cutoff Freq" type="continuous" value="6000.00000"/>
+					<param name="Mid Gain 1" type="continuous" value="2.357143"/>
+					<param name="Mid Freq 1" type="continuous" value="262.50000"/>
+					<param name="Mid Bandwidth" type="continuous" value="1.00000"/>
+					<param name="Low Gain" type="continuous" value="0.214286"/>
+					<param name="Low Cutoff Freq" type="continuous" value="80.133926"/>
 				</coreeffect>
 				<send bypassed="no" bypasspresolo="no" sendASIOoutput="0" solo="no"/>
 				<send bypassed="no" bypasspresolo="no" sendphysicaloutput="11" solo="no"/>
+				<coreeffect abbrevname="4-BAND_E" bypassed="no" bypasspresolo="no" name="4-Band EQ" piaguid="{B88FB319-F147-43B4-A556-E4C80D330612}" solo="no" sourcepreset="Default" wetdrymix="0.50000">
+					<param name="High Shelf Gain" type="continuous" value="16.216217"/>
+					<param name="High Corner Freq" type="continuous" value="10000.00000"/>
+					<param name="Mid 2 Gain" type="continuous" value="5.837837"/>
+					<param name="Mid 2 Center Freq" type="continuous" value="3175.675781"/>
+					<param name="Mid 2 Bandwidth" type="continuous" value="1.00000"/>
+					<param name="Mid 1 Gain" type="continuous" value="-17.81081"/>
+					<param name="Mid 1 Center Freq" type="continuous" value="1272.720215"/>
+					<param name="Mid 1 Bandwidth" type="continuous" value="1.00000"/>
+					<param name="Low Shelf Gain" type="continuous" value="17.729731"/>
+					<param name="Low Corner Freq" type="continuous" value="80.405403"/>
+				</coreeffect>
+				<coreeffect abbrevname="1-BAND_P" bypassed="no" bypasspresolo="no" name="1-Band Para EQ" piaguid="{82E6F62A-3B55-445E-B9D0-8468333A896B}" solo="no" sourcepreset="Default" wetdrymix="0.50000">
+					<param name="Gain" type="continuous" value="12.432432"/>
+					<param name="Center Frequency" type="continuous" value="4024.144043"/>
+					<param name="Bandwidth" type="continuous" value="24.18018"/>
+				</coreeffect>
 			</insertschain>
 		</mainsection>
 		<mixerstrips>
@@ -197,8 +223,8 @@
 		</mixerstrips>
 	</system>
 	<syncsettings>
-		<SMPTEStripeFrameRate value="0"/>
-		<SMPTEOutLevel value="0"/>
+		<SMPTEStripeFrameRate value="3"/>
+		<SMPTEOutLevel value="1"/>
 		<ExtFlywheelCount value="127"/>
 		<WCTerm value="0"/>
 	</syncsettings>

@@ -39,9 +39,7 @@
 				<auxbuss>
 					<sendamount value="0.00000"/>
 					<returnamount value="-132.00000"/>
-					<insertschain>
-						<send bypassed="no" bypasspresolo="no" sendASIOoutput="4" solo="no"/>
-					</insertschain>
+					<insertschain/>
 				</auxbuss>
 				<auxbuss>
 					<sendamount value="0.00000"/>
@@ -49,12 +47,17 @@
 					<insertschain/>
 				</auxbuss>
 			</auxbusses>
-			<mixlevel value="-26.145418"/>
+			<mixlevel value="-13.60484"/>
 			<monitorlevel value="0.00000"/>
 			<balance value="0.00000"/>
 			<mute value="no"/>
 			<insertschain>
 				<peakmeter bypassed="no" bypasspresolo="no" solo="no"/>
+				<coreeffect abbrevname="1-BAND_S" bypassed="yes" bypasspresolo="no" name="1-Band Shelf EQ" piaguid="{524C5D3F-7A28-4F58-8906-507E6C0F8C43}" solo="no" sourcepreset="Default" wetdrymix="1.00000">
+					<param name="Shelf Type" type="selector" value="1"/>
+					<param name="Gain" type="continuous" value="3.348214"/>
+					<param name="Corner Frequency" type="continuous" value="1440.00000"/>
+				</coreeffect>
 				<send bypassed="no" bypasspresolo="no" sendASIOoutput="0" solo="no"/>
 				<send bypassed="no" bypasspresolo="no" sendphysicaloutput="11" solo="no"/>
 			</insertschain>
@@ -146,25 +149,6 @@
 						<param name="Gain" type="continuous" value="-26.486486"/>
 						<param name="Post EQ Center Freq" type="continuous" value="4389.909668"/>
 						<param name="Post EQ Bandwidth" type="continuous" value="4497.657715"/>
-					</coreeffect>
-					<coreeffect abbrevname="SPEAKER" bypassed="no" bypasspresolo="no" name="Speaker Simulator" piaguid="{8F59DBFE-6E66-4CB2-A095-23DAD60D3E43}" solo="no" sourcepreset="Default" wetdrymix="1.00000">
-						<param name="Speaker Type" type="selector" value="9"/>
-						<param name="High Gain" type="continuous" value="0.00000"/>
-						<param name="High Cutoff Freq" type="continuous" value="3100.00000"/>
-						<param name="Mid Gain 1" type="continuous" value="3.00000"/>
-						<param name="Mid Freq 1" type="continuous" value="5350.00000"/>
-						<param name="Mid Bandwidth 1" type="continuous" value="0.20000"/>
-						<param name="Mid Gain 2" type="continuous" value="-6.00000"/>
-						<param name="Mid Freq 2" type="continuous" value="5000.00000"/>
-						<param name="Mid Bandwidth 2" type="continuous" value="1.40000"/>
-						<param name="Mid Gain 3" type="continuous" value="4.00000"/>
-						<param name="Mid Freq 3" type="continuous" value="800.00000"/>
-						<param name="Mid Bandwidth 3" type="continuous" value="0.32000"/>
-						<param name="Mid Gain 4" type="continuous" value="4.00000"/>
-						<param name="Mid Freq 4" type="continuous" value="500.00000"/>
-						<param name="Mid Bandwidth 4" type="continuous" value="0.40000"/>
-						<param name="Low Gain" type="continuous" value="1.60000"/>
-						<param name="Low Cutoff Freq" type="continuous" value="150.00000"/>
 					</coreeffect>
 					<peakmeter bypassed="no" bypasspresolo="no" solo="no"/>
 				</insertschain>
